@@ -1,0 +1,16 @@
+function checkboxvalid(){
+var ch=document.getElementsByName("check");
+var cnt=0;
+for (let index = 0; index < ch.length; index++) {
+    if(ch[index].checked==true){
+        cnt++;
+    }
+    
+}
+
+if(cnt==0){
+alert("check th box");
+}else{
+    alert("ok");
+}
+}
