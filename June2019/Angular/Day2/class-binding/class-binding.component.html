@@ -1,0 +1,23 @@
+<p>
+  class-binding works!
+</p>
+
+<h1 [class]="myclass1">Class Binding 1</h1>
+
+<h1 [class]="isclass? myclass1:myclass2">Class Binding 2</h1>
+
+<h1 [class]="count<4?myclass3:myclass1">Class Binding 3</h1>
+
+
+
+<h1 [ngClass]="myclssobj">Class Binding 5</h1>
+
+<h1 [class.off]="rating<2" [class.on]="rating>2" >Class Binding 6</h1>
+
+<br><br>
+
+<!-- it seems like Two way Binding -->
+<button (click)="changecolor()">Change Color</button>
+<h1 [class]="mychangeapply">Change Color Using Click & Class Binding</h1>
+
+

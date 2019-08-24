@@ -1,0 +1,43 @@
+<p>
+  event-binding works!
+</p>
+
+<button (click)="OnClick()">Click Me</button>
+{{mystr}}
+
+<br>
+<!-- $event-is A special variable provided by Angular, It gives information about Dom current Event -->
+<button (click)="onClick1($event)" value="R U Click">Read me</button>
+
+<input type="text" value="" (click)="OnInputclick()" >
+{{myinput}}
+<br><br>
+
+<!-- Generally key down & keyup event is called Event Filtering -->
+
+<input type="text" value="" (keyup)="OnInputclick1()" >
+{{myinput1}}
+
+<br><br>
+<input type="text" value="" (keydown)="OnInputclick2()">
+{{myinput2}}
+<br><br>
+<button (click)="mystr1 = 'Welcome to Hefshine'" >Caculate</button>
+{{mystr1}}
+<br><br>
+<button (click)="mycal=2*2" >Caculate</button>
+{{mycal}}
+<br><br>
+<button (click)="mycal1=num1*num2" >Caculate</button>
+{{mycal1}}
+<br><br>
+<button (click)="CLICKME1()">CLick Me</button>
+{{mystr3}}
+
+<br><br>
+<button (click)="CLICKME2()">CLick Me</button>
+<input type="text" value="{{msg}}" >
+
+<br><br>
+<button (click)="CLICKME3()">CLick Me</button>
+<input type="text" [value]="msg1">

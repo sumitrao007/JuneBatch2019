@@ -1,0 +1,35 @@
+<p>
+  style-binding works!
+</p>
+
+<h1 [style.color]="mycolor">Style Binding1</h1>
+
+<h1 [style.color]="iscolor?'red':'black'">Style Binding 1</h1>
+
+<h1 [ngStyle]="mystyle">Style Binding1</h1>
+
+<button (click)="onRed()">Red</button>
+<button (click)="onGreen()">Green</button>
+<button (click)="onBlue()">Blue</button>
+<button (click)="onBlack()">Black</button>
+<br><br>
+<div class="container" [style.background]="divcolor"></div>
+<br><br><br>
+
+<button (click)="onchangecolor('red')" >Red</button>
+<button (click)="onchangecolor('green')">Green</button>
+<button (click)="onchangecolor('blue')">Blue</button>
+<button (click)="onchangecolor('black')">Black</button>
+<br><br>
+<div class="container" [style.background]="divcolor"></div>
+
+<br><br><br>
+
+<button (click)="onchangecolor1($event)" value="red" >Red</button>
+<button (click)="onchangecolor1($event)" value="green">Green</button>
+<button (click)="onchangecolor1($event)" value="blue">Blue</button>
+<button (click)="onchangecolor1($event)" value="black">Black</button>
+<br><br>
+<div class="container" [style.background]="divcolor"></div>
+
+
