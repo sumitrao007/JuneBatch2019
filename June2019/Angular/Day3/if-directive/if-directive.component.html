@@ -1,0 +1,37 @@
+<p>
+  if-directive works!
+</p>
+
+<!-- What is structral directive  -->
+<!-- Are responsible for HTML layout. They shape or reshape the DOM's structure, typically by adding, removing, or manipulating elements. Structural directives are a key part of Angular everyone should be familiar with. ... The asterisk ( * ) states it is a structural directive -->
+
+<div *ngIf="false">Hi U R in If directive
+
+</div>
+<br>
+
+<div *ngIf="rating<4">
+U R in Div Tag
+</div>
+<br><br>
+
+<div *ngIf="rating1<4; else elsepart">
+U R in Div Tag If Directive
+</div>
+<ng-template #elsepart>
+  U r Else Part
+</ng-template>
+<br><br>
+
+<div *ngIf="rating2<5; then maindiv else elsepart1 ">
+
+</div>
+    <ng-template #maindiv>
+        U R In Main Div Condition is true
+      
+      </ng-template>
+
+<ng-template #elsepart1>
+  <input type="text" placeholder="Enter the Name">
+</ng-template>
+
