@@ -1,0 +1,31 @@
+Class Binding /one way binding
+[class]="Property"
+[ngClass]="myobj"
+
+Style Binding/one way binding
+[style.background]="property"
+[ngStyle]="myobj"
+
+Event Binding
+(click)="MethodName"
+
+Two Way Binding
+notation banna in box [( )]
+
+Template Refence Variable
+It Use to Access DOM Element Properties in .ts File
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
