@@ -1,0 +1,17 @@
+<p>
+  ngswitch-directive works!
+</p>
+
+<div [ngSwitch]="colorname">
+  <div *ngSwitchCase="'red'">U r color is {{colorname}}</div>
+  <div *ngSwitchCase="'green'">U r color is {{colorname}}</div>
+  <div *ngSwitchCase="'blue'">U r color is {{colorname}}</div>
+  <div *ngSwitchDefault>U R In Default case</div>
+</div>
+<br><br>
+<div [ngSwitch]="colorname1">
+    <div *ngSwitchCase="'red'" [style.background]="'red'" >U r color is {{colorname1}}</div>
+    <div *ngSwitchCase="'green'" [style.background]="'green'">U r color is {{colorname1}}</div>
+    <div *ngSwitchCase="'blue'" [style.background]="'blue'">U r color is {{colorname1}}</div>
+    <div *ngSwitchDefault>U R In Default case</div>
+  </div>
