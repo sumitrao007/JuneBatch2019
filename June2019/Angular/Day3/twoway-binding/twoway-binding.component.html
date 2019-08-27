@@ -1,0 +1,16 @@
+<p>
+  twoway-binding works!
+</p>
+
+<input type="text" 
+[(ngModel)]="name"
+placeholder="Enter the Username" >
+{{name}}
+
+<br>
+
+<input type="text" [(ngModel)]="myvalue"> <br>
+<button (click)="ClickMe()">Click Me</button> <br>
+<div [hidden]="ishidden"> {{myvalue}} </div>
+
+
