@@ -1,0 +1,72 @@
+<p>
+  ngfor-directive works!
+</p>
+
+<div *ngFor="let element of mycolor; index as i">
+{{i}} {{element}}
+
+</div>
+<br><br>
+<div *ngFor="let element of mycolor; first as f">
+    {{f}} {{element}}
+    
+    </div>
+
+    <br><br>
+<div *ngFor="let element of mycolor; last as f">
+    {{f}} {{element}}
+    
+  </div>
+
+  <br><br>
+  <div *ngFor="let element of mycolor; even as e">
+      {{e}} {{element}}
+      
+    </div>
+
+    <br><br>
+  <div *ngFor="let element of mycolor; even as e">
+
+    <div *ngIf="e==true">
+        {{e}} {{element}}
+    </div>
+           
+    </div>
+
+    <br><br>
+  <div *ngFor="let element of mycolor; odd as o">
+
+    <div *ngIf="o==true">
+        {{o}} {{element}}
+    </div>
+           
+    </div>
+
+    <br><br>
+    <div *ngFor="let item of mycolor1">
+      {{item.name}} {{item.salary}}
+    </div>
+
+    <table style="border: 1px solid red;">
+      <thead>
+        <th>Sr No </th>
+        <th>Name </th>
+        <th> Salary</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of mycolor1; index as i">
+          <td>{{i}}</td>
+          <td>{{item.name}}</td>
+          <td>{{item.salary}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ul>
+        <li *ngFor="let item of mycolor1">
+          {{item.name}} {{item.salary}}
+        </li>
+    </ul>
+
+
+
