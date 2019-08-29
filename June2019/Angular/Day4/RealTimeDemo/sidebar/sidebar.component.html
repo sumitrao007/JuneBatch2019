@@ -1,0 +1,11 @@
+<p>
+  sidebar works!
+</p>
+
+<br>
+
+<ul>
+  <li *ngFor="let item of [10,20,30,40]; index as i">
+    <button (click)="onClick(i)">ID {{i+1}}</button>
+  </li>
+</ul>
