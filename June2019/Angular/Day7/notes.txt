@@ -1,0 +1,26 @@
+Routing Steps
+1 Configure the routes
+2 Add a router outlet
+3 Add links/navigate
+
+1 Confugure Routes
+ - In App.module->imports section - define RouterModule.forRoot()
+  forRoot is static method defined in RouterModule & it is use to define root route for application
+2 add router-outlet tag in app.component.html or from where you want to start navigate you can place it
+3 Add links
+<a href="/Page1">page1 here we can not use this <a href> tag bcz 
+   - when use a-tag its page filker
+   - every time we click on tag it download all resoursce on each click
+     yhis will not be happen bcz we developed a modern angular app (i.e. spa) it loads at the first time so instead of <a href> tag we use
+the directive called routerlink,this directive is defined in RouterModule 
+
+
+
+
+
+
+
+
+
+
+
