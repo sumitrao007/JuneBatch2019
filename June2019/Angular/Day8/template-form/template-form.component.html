@@ -1,0 +1,94 @@
+<p>
+  template-form works!
+</p>
+
+<br><br>
+
+<div class="container-fluid">
+
+  <form #f="ngForm" (ngSubmit)="submit(f)" >
+
+    <div class="form-group">
+
+      <label for="username">Username</label>
+      <input type="text" 
+      class="form-control" 
+      id="username"
+      name="username"
+      ngModel
+      #username="ngModel"
+      (change)="onChange(username)"
+      required
+      minlength="3"
+      maxlength="8"
+      pattern="sumit"
+      >
+      
+      <div class="alert alert-danger" 
+      *ngIf="username.touched && !username.valid">please Enter the Username
+      
+      <div *ngIf="username.errors.minlength">
+        Please Enter Minimum length is {{username.errors.minlength.requiredLength}}
+      </div>
+
+      <div *ngIf="username.errors.pattern">
+          Appropriate Pattern is required
+      </div>
+
+      </div>
+
+    </div>
+
+    <div class="form-group">
+
+        <label for="comment">Comment</label>
+        <textarea type="text" 
+        class="form-control" 
+        id="comment"
+        name="comment"
+        rows="10"
+        cols="10"
+        ngModel
+        #comment="ngModel"
+        required      
+
+        >
+        </textarea>
+
+        <div class="alert alert-danger" *ngIf="comment.touched && !comment.valid">
+          Please Enter the Comments
+        </div>
+      </div>
+
+      <div class="checkbox">
+          <label for="">
+            <input type="checkbox" ngModel name="issubscribed"  #mail="ngModel" required> I Agree All the Terms & Conditions.
+          </label>        
+        </div>
+
+        <div class="radio">
+            <label for="con">
+              <input ngModel #contact="ngModel" type="radio" name="con" value="1" required > Email
+            </label>
+          </div>
+        <div class="radio">
+            <label for="con">
+              <input ngModel #contact="ngModel" type="radio" name="con" value="2" required > Phone
+            </label>           
+    
+          </div>
+
+          <div class="form-group">
+              <label for="contact">contact Method</label>
+              <select ngModel name="contact" id="contact" class="form-control" required>
+               <!-- <option *ngFor="let item of contactMethod" [value]="item.id">{{item.name}} </option> -->
+               <option *ngFor="let item of contactMethod" [ngValue]="item">{{item.name}} </option>
+              </select>
+            </div>
+
+      <p> {{f.value | json }}  </p>
+      <button class="btn btn-success" [disabled]="!f.valid">Submit</button>
+
+  </form>
+
+</div>

@@ -1,0 +1,34 @@
+-Install bootstrap in angular
+npm install bootstrap@4.0.0 --save
+
+Angular has class FormControl
+- Used for status & Validity
+-we have to use multiple properties
+ 1 valid -is valid
+ 2 invalid - is  invalid
+ 3 dirty- You typed in that element it is called dirty
+ 4 pristine - we not touched that field or HTML element,also it is called clean means you do not type any thing in that.
+ 5 errors  - is error or not
+ 6 touched
+
+-Template Driven form is used as directive level status & Validation
+ -with minimal compoenet code
+ - Easy to use
+ - Suitable for simple scenarios and fails for complex scenarios 
+ - Automatic track of the form & its data
+- Template driven form used directive
+ - The NgModel directive creates the FormControl Instance (angular creates control object) to manage the template form control
+- when we use ngModel directives we must use name attribute, it is required for ngModel
+ - ngModel directive holds the control, that you created for the element and name attribute, also it monitors their properties, including their validity
+
+
+
+
+
+
+
+
+
+
+
+

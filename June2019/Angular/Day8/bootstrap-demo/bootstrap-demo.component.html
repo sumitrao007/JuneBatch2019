@@ -1,0 +1,72 @@
+<p>
+  bootstrap-demo works!
+</p>
+
+
+
+<br>
+<div class="row">
+    <div class="col-md-6">
+      <button class="btn btn-success ">bootstrap-demo</button>
+      <br>
+      <input type="text" placeholder="Enter User Name">
+      <br>
+      <input type="checkbox"> Male
+
+    </div>
+    <div class="col-md-6">
+      <button class="btn btn-success pull-right">bootstrap-demo</button>
+    </div>
+</div>
+<br><br><br>
+<div class="row">
+  <div class="col-md-8">
+Table Display
+
+    <table class="table table-striped table-bordered">
+      <thead>
+        <th>Id</th>
+        <th>Product</th>
+        <th>Description</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of product">
+          <td>{{item.id}} </td>
+          <td>{{item.product}} </td>
+          <td>{{item.description}} </td>
+          <td>{{item.quantity}} </td>
+          <td>{{item.price}} </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+  </div>
+  <div class="col-md-4">
+    kfgsldfhgsd
+
+    <table class="table table-striped table-bordered">
+      <thead>
+        <th>Id</th>
+        <th>Product</th>
+        <th>Description</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of product">
+          <td>{{item.id}} </td>
+          <td>{{item.product}} </td>
+          <td>{{item.description}} </td>
+          <td>{{item.quantity}} </td>
+          <td>{{item.price}} </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
